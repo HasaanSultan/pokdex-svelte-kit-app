@@ -1,13 +1,10 @@
 <script>
+	import '../app.css';
 	import Nav from '../components/nav.svelte';
 </script>
 
-<Nav />
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
-<slot />
+<div class="p-8 max-w-6xl mx-auto">
+	<Nav />
 
-<style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>
+	<slot />
+</div>
